@@ -1,0 +1,12 @@
+<html>
+<h1>Coloca o número com DDI + DDD e Chama no zap !</h1>    
+<input type="text" id="texto" name="name" size="15"><br><br>
+<button type="button" id="botao" size="15">Chama no zap!</button>
+
+<script type="text/javascript">
+    document.getElementById("botao").onclick = function () {
+        let texto = document.getElementById("texto");
+        location.href = "https://api.whatsapp.com/send?phone=" + texto.value;
+    };
+</script>
+</html>
